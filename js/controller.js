@@ -28,35 +28,6 @@ var controller = (function () {
  
                
     }
-
-   
-    
-    var search = function (data) {
-        $.each(listOfStudents, function (i, v) {
-            if (v.LastName.toLowerCase() === data.toLowerCase()) {
-                //view.displayStudent(v, i);
-                console.log(v)
-                counter++;
-            }
-        })
-        
-        listListener();
-    }
-    
-    var listListener = function () {
-        $('#student-list li').click(function () {
-            if (counter > 0) {
-                selectStudent(this.id);
-            } else {
-                return;
-            }
-        });
-    }
-    
-    var selectStudent = function (id) {
-        view.clearGrades();
-        view.displayGrades(id);
-    }
     
     return {
         searchListener: searchListener,
