@@ -1,0 +1,38 @@
+/*
+
+Custom CSS by Andre Ho
+
+*/
+
+/*Search Section*/
+#search_section {
+    border: 0.1em solid black;
+    padding: 15px;
+}
+
+.ft-right{
+    float: right;
+}
+
+/*Result Section*/
+#result-section {
+    border-left: 0.1em solid black;
+    border-bottom: 0.1em solid black;
+    border-right: 0.1em solid black;
+}
+
+.bdr-right{
+    border-right: 0.1em solid black;
+}
+
+#student-list{
+    color:red;
+}
+
+.hideContent {
+    visibility: hidden;
+}
+
+.showContent {
+    visibility: visible;
+}
