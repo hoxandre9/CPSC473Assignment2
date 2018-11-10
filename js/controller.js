@@ -3,7 +3,7 @@ var controller = (function () {
     //search function
     var searchListener = function () {
         
-        
+        //init var
         var studentModel = model.listOfStudents;
         var counter = 0;
         //data bind user input
@@ -14,23 +14,20 @@ var controller = (function () {
             return studentModel.lastName.toLowerCase() === userInput.toLowerCase();
         });
        
-        //if find show result
+        //if student find, show result
         if (result.length !== 0){
-            //show result
-            counter++;            
-            view.showResult(result, counter);
+            //show result         
+            view.showResult(result);
            
            
         }else {
-            //show not found
+            //show not found message
             view.showNoResult();
         }
- 
-               
+  
     }
     
     return {
-        searchListener: searchListener,
-        listListener: listListener
+        searchListener: searchListener
     }
 })();
